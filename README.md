@@ -2,7 +2,7 @@ Profile phase project
 
 Class: P-CB-S-03
 
-The team working on this project conists of:
+The team working on this project consists of:
 
 Rutjens, Tim T.G.S.
 
