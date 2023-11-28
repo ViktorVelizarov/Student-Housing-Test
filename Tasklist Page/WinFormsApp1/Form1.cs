@@ -5,6 +5,8 @@ namespace WinFormsApp1
     public partial class Form1 : Form
     {
         int month, year;
+        int nameNumber = 0;
+        List<string> namesList = new List<string> { "Peter", "George", "Tom", "Jordan", "Felix", "LeBron" };
         public Form1()
         {
             InitializeComponent();
@@ -45,10 +47,20 @@ namespace WinFormsApp1
             }
 
             //creating usercontrol for days
+            
             for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucdays = new UserControlDays();
-                ucdays.fillInfo(i, "test");
+
+                ucdays.fillInfo(i, namesList[nameNumber]);
+                if(nameNumber < 5)
+                {
+                    nameNumber++;
+                }
+                else
+                {
+                    nameNumber = 0;
+                }
                 daycontainer.Controls.Add(ucdays);
             }
         }
@@ -90,16 +102,25 @@ namespace WinFormsApp1
                     daycontainer.Controls.Add(ucblank);
                 }
 
-                //creating usercontrol for days
-                for (int i = 1; i <= days; i++)
+            //creating usercontrol for days
+            for (int i = 1; i <= days; i++)
+            {
+                UserControlDays ucdays = new UserControlDays();
+
+                ucdays.fillInfo(i, namesList[nameNumber]);
+                if (nameNumber < 5)
                 {
-                    UserControlDays ucdays = new UserControlDays();
-                    ucdays.fillInfo(i, "test");
-                    daycontainer.Controls.Add(ucdays);
+                    nameNumber++;
                 }
-            
-            
-            
+                else
+                {
+                    nameNumber = 0;
+                }
+                daycontainer.Controls.Add(ucdays);
+            }
+
+
+
         }
 
         private void btnprevious_Click(object sender, EventArgs e)
@@ -137,15 +158,24 @@ namespace WinFormsApp1
                     daycontainer.Controls.Add(ucblank);
                 }
 
-                //creating usercontrol for days
-                for (int i = 1; i <= days; i++)
+            //creating usercontrol for days
+            for (int i = 1; i <= days; i++)
+            {
+                UserControlDays ucdays = new UserControlDays();
+
+                ucdays.fillInfo(i, namesList[nameNumber]);
+                if (nameNumber < 5)
                 {
-                    UserControlDays ucdays = new UserControlDays();
-                    ucdays.fillInfo(i, "test");
-                    daycontainer.Controls.Add(ucdays);
+                    nameNumber++;
                 }
-            
-            
+                else
+                {
+                    nameNumber = 0;
+                }
+                daycontainer.Controls.Add(ucdays);
+            }
+
+
         }
     }
 }
