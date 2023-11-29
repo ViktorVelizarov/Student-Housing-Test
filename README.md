@@ -10,5 +10,5 @@ Stoev, Anton A.T.
 
 Velizarov, Viktor V.V.
 
-Šemežys, Eitvidas E.
+Šemežys, Eitvidas Eitvidas
 

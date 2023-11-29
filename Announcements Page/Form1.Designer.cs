@@ -2,7 +2,7 @@
 {
     partial class AnnouncementsPage
     {
-        /// <summary>
+        /// <summy>
         ///  Required designer variable.
         /// </summary>
         private System.ComponentModel.IContainer components = null;
