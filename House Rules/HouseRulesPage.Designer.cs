@@ -29,11 +29,12 @@
         private void InitializeComponent()
         {
             RulesListbox1 = new ListBox();
-            listBox2 = new ListBox();
             button1 = new Button();
             label1 = new Label();
             AddRule = new Button();
             AddRuleTextbox = new TextBox();
+            DeleteRule = new Button();
+            RulesComboBox = new ComboBox();
             SuspendLayout();
             // 
             // RulesListbox1
@@ -41,23 +42,12 @@
             RulesListbox1.FormattingEnabled = true;
             RulesListbox1.ItemHeight = 20;
             RulesListbox1.Items.AddRange(new object[] { "Ayyyy", "Rule Number one - There are rules!", "rule no 2. - we must follow them!", "3 Structure", "CONSISTENCY IS THE FOURTH RULLE" });
-            RulesListbox1.Location = new Point(73, 185);
+            RulesListbox1.Location = new Point(373, 185);
             RulesListbox1.Margin = new Padding(3, 4, 3, 4);
             RulesListbox1.Name = "RulesListbox1";
             RulesListbox1.Size = new Size(350, 464);
             RulesListbox1.TabIndex = 0;
             RulesListbox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
-            // 
-            // listBox2
-            // 
-            listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 20;
-            listBox2.Items.AddRange(new object[] { "Some more rules" });
-            listBox2.Location = new Point(448, 185);
-            listBox2.Margin = new Padding(3, 4, 3, 4);
-            listBox2.Name = "listBox2";
-            listBox2.Size = new Size(350, 464);
-            listBox2.TabIndex = 1;
             // 
             // button1
             // 
@@ -97,16 +87,35 @@
             AddRuleTextbox.Size = new Size(250, 27);
             AddRuleTextbox.TabIndex = 5;
             // 
+            // DeleteRule
+            // 
+            DeleteRule.Location = new Point(845, 394);
+            DeleteRule.Name = "DeleteRule";
+            DeleteRule.Size = new Size(250, 48);
+            DeleteRule.TabIndex = 6;
+            DeleteRule.Text = "Delete Rule";
+            DeleteRule.UseVisualStyleBackColor = true;
+            DeleteRule.Click += DeleteRule_Click;
+            // 
+            // RulesComboBox
+            // 
+            RulesComboBox.FormattingEnabled = true;
+            RulesComboBox.Location = new Point(845, 350);
+            RulesComboBox.Name = "RulesComboBox";
+            RulesComboBox.Size = new Size(250, 28);
+            RulesComboBox.TabIndex = 7;
+            // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(1125, 908);
+            Controls.Add(RulesComboBox);
+            Controls.Add(DeleteRule);
             Controls.Add(AddRuleTextbox);
             Controls.Add(AddRule);
             Controls.Add(label1);
             Controls.Add(button1);
-            Controls.Add(listBox2);
             Controls.Add(RulesListbox1);
             Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
@@ -118,10 +127,11 @@
         #endregion
 
         private ListBox RulesListbox1;
-        private ListBox listBox2;
         private Button button1;
         private Label label1;
         private Button AddRule;
         private TextBox AddRuleTextbox;
+        private Button DeleteRule;
+        private ComboBox RulesComboBox;
     }
 }
