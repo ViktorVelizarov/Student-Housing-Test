@@ -9,4 +9,12 @@
     <ImplicitUsings>enable</ImplicitUsings>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Agreements Page\Agreements Page.csproj" />
+    <ProjectReference Include="..\Announcements Page\Announcements Page.csproj" />
+    <ProjectReference Include="..\House Rules\A 2.0.csproj" />
+    <ProjectReference Include="..\Login Page\Login Page.csproj" />
+    <ProjectReference Include="..\Tasklist Page\WinFormsApp1\WinFormsApp1.csproj" />
+  </ItemGroup>
+
 </Project>

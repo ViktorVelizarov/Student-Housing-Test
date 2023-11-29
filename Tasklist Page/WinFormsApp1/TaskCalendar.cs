@@ -2,12 +2,12 @@ using System.Globalization;
 
 namespace WinFormsApp1
 {
-    public partial class Form1 : Form
+    public partial class TaskCalendar : Form
     {
         int month, year;
         int nameNumber = 0;
         List<string> namesList = new List<string> { "Peter", "George", "Tom", "Jordan", "Felix", "LeBron" };
-        public Form1()
+        public TaskCalendar()
         {
             InitializeComponent();
         }
