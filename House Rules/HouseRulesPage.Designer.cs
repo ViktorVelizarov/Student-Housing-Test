@@ -28,38 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            listBox1 = new ListBox();
+            RulesListbox1 = new ListBox();
             listBox2 = new ListBox();
             button1 = new Button();
             label1 = new Label();
+            AddRule = new Button();
+            AddRuleTextbox = new TextBox();
             SuspendLayout();
             // 
-            // listBox1
+            // RulesListbox1
             // 
-            listBox1.FormattingEnabled = true;
-            listBox1.ItemHeight = 15;
-            listBox1.Items.AddRange(new object[] { "Ayyyy", "Rule Number one - There are rules!", "rule no 2. - we must follow them!", "3 Structure", "CONSISTENCY IS THE FOURTH RULLE" });
-            listBox1.Location = new Point(64, 139);
-            listBox1.Name = "listBox1";
-            listBox1.Size = new Size(307, 349);
-            listBox1.TabIndex = 0;
-            listBox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
+            RulesListbox1.FormattingEnabled = true;
+            RulesListbox1.ItemHeight = 20;
+            RulesListbox1.Items.AddRange(new object[] { "Ayyyy", "Rule Number one - There are rules!", "rule no 2. - we must follow them!", "3 Structure", "CONSISTENCY IS THE FOURTH RULLE" });
+            RulesListbox1.Location = new Point(73, 185);
+            RulesListbox1.Margin = new Padding(3, 4, 3, 4);
+            RulesListbox1.Name = "RulesListbox1";
+            RulesListbox1.Size = new Size(350, 464);
+            RulesListbox1.TabIndex = 0;
+            RulesListbox1.SelectedIndexChanged += listBox1_SelectedIndexChanged;
             // 
             // listBox2
             // 
             listBox2.FormattingEnabled = true;
-            listBox2.ItemHeight = 15;
+            listBox2.ItemHeight = 20;
             listBox2.Items.AddRange(new object[] { "Some more rules" });
-            listBox2.Location = new Point(555, 139);
+            listBox2.Location = new Point(448, 185);
+            listBox2.Margin = new Padding(3, 4, 3, 4);
             listBox2.Name = "listBox2";
-            listBox2.Size = new Size(307, 349);
+            listBox2.Size = new Size(350, 464);
             listBox2.TabIndex = 1;
             // 
             // button1
             // 
-            button1.Location = new Point(12, 628);
+            button1.Location = new Point(14, 837);
+            button1.Margin = new Padding(3, 4, 3, 4);
             button1.Name = "button1";
-            button1.Size = new Size(131, 41);
+            button1.Size = new Size(150, 55);
             button1.TabIndex = 2;
             button1.Text = "Back";
             button1.UseVisualStyleBackColor = true;
@@ -68,22 +73,42 @@
             // 
             label1.AutoSize = true;
             label1.Font = new Font("Times New Roman", 20F, FontStyle.Regular, GraphicsUnit.Point);
-            label1.Location = new Point(392, 51);
+            label1.Location = new Point(448, 68);
             label1.Name = "label1";
-            label1.Size = new Size(152, 31);
+            label1.Size = new Size(190, 39);
             label1.TabIndex = 3;
             label1.Text = "House Rules";
             label1.Click += label1_Click;
             // 
+            // AddRule
+            // 
+            AddRule.Location = new Point(845, 230);
+            AddRule.Name = "AddRule";
+            AddRule.Size = new Size(250, 48);
+            AddRule.TabIndex = 4;
+            AddRule.Text = "Add Rule";
+            AddRule.UseVisualStyleBackColor = true;
+            AddRule.Click += AddRule_Click;
+            // 
+            // AddRuleTextbox
+            // 
+            AddRuleTextbox.Location = new Point(845, 185);
+            AddRuleTextbox.Name = "AddRuleTextbox";
+            AddRuleTextbox.Size = new Size(250, 27);
+            AddRuleTextbox.TabIndex = 5;
+            // 
             // Form1
             // 
-            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(984, 681);
+            ClientSize = new Size(1125, 908);
+            Controls.Add(AddRuleTextbox);
+            Controls.Add(AddRule);
             Controls.Add(label1);
             Controls.Add(button1);
             Controls.Add(listBox2);
-            Controls.Add(listBox1);
+            Controls.Add(RulesListbox1);
+            Margin = new Padding(3, 4, 3, 4);
             Name = "Form1";
             Text = "A.2.0 House Rules Page";
             ResumeLayout(false);
@@ -92,9 +117,11 @@
 
         #endregion
 
-        private ListBox listBox1;
+        private ListBox RulesListbox1;
         private ListBox listBox2;
         private Button button1;
         private Label label1;
+        private Button AddRule;
+        private TextBox AddRuleTextbox;
     }
 }
