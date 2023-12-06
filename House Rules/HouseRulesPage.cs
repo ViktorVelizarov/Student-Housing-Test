@@ -13,11 +13,11 @@ namespace A_2._0
                 RulesComboBox.Visible = true;
                 DeleteRule.Visible = true;
 
-                foreach(string rule in RulesListbox1.Items)
+                foreach (string rule in RulesListbox1.Items)
                 {
                     RulesComboBox.Items.Add(rule);
                 }
-                
+
             }
             else
             {
@@ -54,6 +54,11 @@ namespace A_2._0
             int selectedRule = RulesComboBox.SelectedIndex;
             RulesListbox1.Items.RemoveAt(selectedRule);
             RulesComboBox.Items.RemoveAt(selectedRule);
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

@@ -25,7 +25,7 @@ namespace WinFormsApp1
             string monthname = DateTimeFormatInfo.CurrentInfo.MonthNames[month];
             lbdate.Text = monthname + " " + year;
 
-            DateTime startofthemonth = new DateTime(year, month+1, 1); //get the first day of the month
+            DateTime startofthemonth = new DateTime(year, month + 1, 1); //get the first day of the month
 
             int days;
             if (month == 0)
@@ -36,7 +36,7 @@ namespace WinFormsApp1
             {
                 days = DateTime.DaysInMonth(year, month + 1); //get the count of days of the month
             }
-            
+
 
             int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
 
@@ -47,13 +47,13 @@ namespace WinFormsApp1
             }
 
             //creating usercontrol for days
-            
+
             for (int i = 1; i <= days; i++)
             {
                 UserControlDays ucdays = new UserControlDays();
 
                 ucdays.fillInfo(i, namesList[nameNumber]);
-                if(nameNumber < 5)
+                if (nameNumber < 5)
                 {
                     nameNumber++;
                 }
@@ -82,25 +82,25 @@ namespace WinFormsApp1
             else
             {
                 month++;
-                days = DateTime.DaysInMonth(year, month+1); //get the count of days of the month
+                days = DateTime.DaysInMonth(year, month + 1); //get the count of days of the month
                 monthname = DateTimeFormatInfo.CurrentInfo.MonthNames[month];
             }
 
 
-                
-                lbdate.Text = monthname + " " + year;
 
-                DateTime startofthemonth = new DateTime(year, month+1, 1); //get the first day of the month
+            lbdate.Text = monthname + " " + year;
+
+            DateTime startofthemonth = new DateTime(year, month + 1, 1); //get the first day of the month
 
 
 
             int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
 
-                for (int i = 1; i < daysoftheweek; i++) //creating blank usercontrol 
-                {
-                    UserControlBlank ucblank = new UserControlBlank();
-                    daycontainer.Controls.Add(ucblank);
-                }
+            for (int i = 1; i < daysoftheweek; i++) //creating blank usercontrol 
+            {
+                UserControlBlank ucblank = new UserControlBlank();
+                daycontainer.Controls.Add(ucblank);
+            }
 
             //creating usercontrol for days
             for (int i = 1; i <= days; i++)
@@ -139,24 +139,24 @@ namespace WinFormsApp1
             {
                 days = DateTime.DaysInMonth(year, month); //get the count of days of the month
                 month--;
-                
-            }
-              
-                   
-              
-                string monthname = DateTimeFormatInfo.CurrentInfo.MonthNames[month];
-                lbdate.Text = monthname + " " + year;
 
-                DateTime startofthemonth = new DateTime(year, month+1, 1); //get the first day of the month
+            }
+
+
+
+            string monthname = DateTimeFormatInfo.CurrentInfo.MonthNames[month];
+            lbdate.Text = monthname + " " + year;
+
+            DateTime startofthemonth = new DateTime(year, month + 1, 1); //get the first day of the month
 
 
             int daysoftheweek = Convert.ToInt32(startofthemonth.DayOfWeek.ToString("d")) + 1;
 
-                for (int i = 1; i < daysoftheweek; i++) //creating blank usercontrol 
-                {
-                    UserControlBlank ucblank = new UserControlBlank();
-                    daycontainer.Controls.Add(ucblank);
-                }
+            for (int i = 1; i < daysoftheweek; i++) //creating blank usercontrol 
+            {
+                UserControlBlank ucblank = new UserControlBlank();
+                daycontainer.Controls.Add(ucblank);
+            }
 
             //creating usercontrol for days
             for (int i = 1; i <= days; i++)
@@ -175,6 +175,11 @@ namespace WinFormsApp1
                 daycontainer.Controls.Add(ucdays);
             }
 
+
+        }
+
+        private void daycontainer_Paint(object sender, PaintEventArgs e)
+        {
 
         }
     }

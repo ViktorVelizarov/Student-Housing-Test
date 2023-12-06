@@ -47,6 +47,7 @@
             daycontainer.Name = "daycontainer";
             daycontainer.Size = new Size(1324, 523);
             daycontainer.TabIndex = 0;
+            daycontainer.Paint += daycontainer_Paint;
             // 
             // btnprevious
             // 
@@ -148,7 +149,7 @@
             lbdate.Text = "month year";
             lbdate.TextAlign = ContentAlignment.MiddleCenter;
             // 
-            // Form1
+            // TaskCalendar
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
@@ -164,7 +165,7 @@
             Controls.Add(btnnext);
             Controls.Add(btnprevious);
             Controls.Add(daycontainer);
-            Name = "Form1";
+            Name = "TaskCalendar";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Form1";
             Load += Form1_Load;

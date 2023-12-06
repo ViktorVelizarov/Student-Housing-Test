@@ -11,5 +11,11 @@ namespace Agreements_Page
         {
 
         }
+
+        private void BackButton_Click(object sender, EventArgs e)
+        {
+            this.Hide();
+
+        }
     }
 }
