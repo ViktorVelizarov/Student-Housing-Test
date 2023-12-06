@@ -20,7 +20,7 @@ namespace WinFormsApp1
         private void displayDays()
         {
             DateTime now = DateTime.Now;
-            month = now.Month;
+            month = now.Month - 1;
             year = now.Year;
             string monthname = DateTimeFormatInfo.CurrentInfo.MonthNames[month];
             lbdate.Text = monthname + " " + year;
