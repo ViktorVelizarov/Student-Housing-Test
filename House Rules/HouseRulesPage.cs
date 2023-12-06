@@ -10,6 +10,7 @@ namespace A_2._0
             {
                 AddRuleTextbox.Visible = true;
                 AddRule.Visible = true;
+<<<<<<< HEAD
                 RulesComboBox.Visible = true;
                 DeleteRule.Visible = true;
 
@@ -18,13 +19,13 @@ namespace A_2._0
                     RulesComboBox.Items.Add(rule);
                 }
 
+=======
+>>>>>>> parent of 944b912 (add a DeleteRule button which only shows up for Admins)
             }
             else
             {
                 AddRuleTextbox.Visible = false;
                 AddRule.Visible = false;
-                RulesComboBox.Visible = false;
-                DeleteRule.Visible = false;
             }
         }
 
@@ -42,18 +43,6 @@ namespace A_2._0
         {
             string newRule = AddRuleTextbox.Text;
             RulesListbox1.Items.Add(newRule);
-
-            foreach (string rule in RulesListbox1.Items)
-            {
-                RulesComboBox.Items.Add(rule);
-            }
-        }
-
-        private void DeleteRule_Click(object sender, EventArgs e)
-        {
-            int selectedRule = RulesComboBox.SelectedIndex;
-            RulesListbox1.Items.RemoveAt(selectedRule);
-            RulesComboBox.Items.RemoveAt(selectedRule);
         }
 
         private void button1_Click(object sender, EventArgs e)
