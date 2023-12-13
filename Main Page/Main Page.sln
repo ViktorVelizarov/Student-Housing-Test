@@ -3,17 +3,17 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.7.34221.43
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MainPage", "MainPage.csproj", "{4F395E09-4825-4D7F-AE47-70504DE08C68}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Main Page", "Main Page.csproj", "{4F395E09-4825-4D7F-AE47-70504DE08C68}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "LoginPage", "..\Login Page\LoginPage.csproj", "{38364930-1BBD-43D0-AF9D-BC5112E2D489}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Login Page", "..\Login Page\Login Page.csproj", "{38364930-1BBD-43D0-AF9D-BC5112E2D489}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AgreementsPage", "..\Agreements Page\AgreementsPage.csproj", "{7B154B9D-3905-4667-8955-6C7E702AA84F}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Agreements Page", "..\Agreements Page\Agreements Page.csproj", "{7B154B9D-3905-4667-8955-6C7E702AA84F}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AnnouncementsPage", "..\Announcements Page\AnnouncementsPage.csproj", "{787A1A42-CE6A-4DA8-9B3B-F608C72F5CEC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Announcements Page", "..\Announcements Page\Announcements Page.csproj", "{787A1A42-CE6A-4DA8-9B3B-F608C72F5CEC}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HouseRules", "..\House Rules\HouseRules.csproj", "{6E14E0B9-D918-49AD-A28B-D16EEE1068B2}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "A 2.0", "..\House Rules\A 2.0.csproj", "{6E14E0B9-D918-49AD-A28B-D16EEE1068B2}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TaskCalendar", "..\Tasklist Page\WinFormsApp1\TaskCalendar.csproj", "{93CB1867-BDAB-4283-9E1E-55E837627DB7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WinFormsApp1", "..\Tasklist Page\WinFormsApp1\WinFormsApp1.csproj", "{93CB1867-BDAB-4283-9E1E-55E837627DB7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

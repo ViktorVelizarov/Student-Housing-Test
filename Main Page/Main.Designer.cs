@@ -46,7 +46,6 @@
             HouseRulesButton.TabIndex = 0;
             HouseRulesButton.Text = "House Rules";
             HouseRulesButton.UseVisualStyleBackColor = true;
-            HouseRulesButton.Click += HouseRulesButton_Click;
             // 
             // AgreementsButton
             // 
@@ -70,7 +69,6 @@
             GroceriesButton.TabIndex = 2;
             GroceriesButton.Text = "Grocery Payments";
             GroceriesButton.UseVisualStyleBackColor = true;
-            GroceriesButton.Click += GroceriesButton_Click;
             // 
             // TaskCalendarButton
             // 
@@ -105,7 +103,6 @@
             AnnouncmentsButton.TabIndex = 6;
             AnnouncmentsButton.Text = "Announcements";
             AnnouncmentsButton.UseVisualStyleBackColor = true;
-            AnnouncmentsButton.Click += AnnouncmentsButton_Click;
             // 
             // MainPage
             // 
